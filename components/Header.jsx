@@ -3,6 +3,7 @@ import { Button } from "./ui/button";
 
 // components
 import Nav from "./Nav";
+import MobileNav from "./MobileNav";
 
 export default function Header() {
   return (
@@ -11,7 +12,7 @@ export default function Header() {
         {/** logo */}
         <Link href="/">
           <h1 className="text-4xl font-semibold">
-            Nicholas <span className="text-accent">.</span>
+            Nicholas<span className="text-accent">.</span>
           </h1>
         </Link>
         {/* desktop nav & hire me button*/}
@@ -22,7 +23,9 @@ export default function Header() {
           </Link>
         </div>
         {/* mobile nav */}
-        <div className="xl:hidden">mobile nav</div>
+        <div className="xl:hidden">
+          <MobileNav />
+        </div>
       </div>
     </header>
   );
