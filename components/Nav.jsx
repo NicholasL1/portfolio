@@ -27,6 +27,7 @@ export default function Nav() {
   const pathname = usePathname(); // Correct function name
   return (
     <nav className="flex gap-8">
+      <ThemeToggle></ThemeToggle>
       {links.map((link, index) => {
         return (
           <Link
@@ -40,7 +41,6 @@ export default function Nav() {
           </Link>
         );
       })}
-      <ThemeToggle></ThemeToggle>
     </nav>
   );
 }
