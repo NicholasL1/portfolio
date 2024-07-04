@@ -4,6 +4,7 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { CiMenuFries } from "react-icons/ci";
+import ThemeToggle from "./ThemeToggle";
 
 const links = [
   {
@@ -42,6 +43,7 @@ const MobileNav = () => {
         </div>
         {/* nav */}
         <nav className="flex flex-col justify-center items-center gap-8">
+          <ThemeToggle></ThemeToggle>
           {links.map((link, index) => {
             return (
               <Link
