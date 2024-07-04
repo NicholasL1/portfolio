@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation"; // Correct import
+import ThemeToggle from "./ThemeToggle";
 
 const links = [
   {
@@ -39,6 +40,7 @@ export default function Nav() {
           </Link>
         );
       })}
+      <ThemeToggle></ThemeToggle>
     </nav>
   );
 }

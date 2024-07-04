@@ -7,6 +7,7 @@ module.exports = {
     "./app/**/*.{js,jsx}",
     "./src/**/*.{js,jsx}",
   ],
+  darkMode: "class",
   prefix: "",
   theme: {
     container: {
@@ -24,10 +25,11 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: "#1c1c22",
+        dark: "#1c1c22",
+        light: "#DFE0E2",
         accent: {
-          DEFAULT: "#00ff99",
-          hover: "#00e187",
+          DEFAULT: "#54ACEB",
+          hover: "#3E64A8",
         },
       },
       keyframes: {
