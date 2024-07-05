@@ -43,7 +43,7 @@ const MobileNav = () => {
         </div>
         {/* nav */}
         <nav className="flex flex-col justify-center items-center gap-8">
-          <ThemeToggle></ThemeToggle>
+          <ThemeToggle />
           {links.map((link, index) => {
             return (
               <Link

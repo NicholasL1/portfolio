@@ -1,11 +1,11 @@
 import { useContext, useState, useEffect } from "react";
 import Lottie from "lottie-react";
-import { ThemeContext } from "../Header";
+import { ThemeContext } from "@/app/context/Theme";
 import codingBoyDark from "@/public/assets/coding-boy-dark.json";
 import codingBoyLight from "@/public/assets/coding-boy-light.json";
 
 const Coder = () => {
-  const { darkMode } = useContext(ThemeContext) || false;
+  const { darkMode } = useContext(ThemeContext);
   const [key, setKey] = useState(0); // State to force re-render
   const [codingBoy, setCodingBoy] = useState(
     darkMode ? codingBoyDark : codingBoyLight

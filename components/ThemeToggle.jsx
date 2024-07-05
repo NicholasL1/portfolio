@@ -4,7 +4,7 @@ import { useEffect, useContext } from "react";
 import { FaMoon } from "react-icons/fa";
 import { BsSunFill } from "react-icons/bs";
 
-import { ThemeContext } from "./Header";
+import { ThemeContext } from "@/app/context/Theme";
 
 const ThemeToggle = () => {
   const { darkMode, setDarkMode } = useContext(ThemeContext);
