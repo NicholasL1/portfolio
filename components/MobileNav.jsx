@@ -28,7 +28,7 @@ const links = [
 const MobileNav = () => {
   const pathname = usePathname();
   return (
-    <Sheet>
+    <Sheet className="sheet">
       <SheetTrigger className="flex justify-center items-center">
         <CiMenuFries className="text-[32px] text-accent" />
       </SheetTrigger>
@@ -37,7 +37,7 @@ const MobileNav = () => {
         <div className="mt-32 mb-40 text-center text-2xl">
           <Link href="/">
             <h1>
-              Nicholas<span className="text-accent">.</span>
+              Where to<span className="text-accent">?</span>
             </h1>
           </Link>
         </div>

@@ -1,6 +1,5 @@
 "use client";
 
-import Lottie from "lottie-react";
 import { motion } from "framer-motion";
 
 import { Button } from "@/components/ui/button";
@@ -77,8 +76,8 @@ const Home = () => {
             </motion.p>
             {/* btn and socials */}
           </div>
-          {/* photo */}
           <div>
+            {/* Animation */}
             <Coder />
           </div>
         </div>
