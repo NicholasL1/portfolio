@@ -11,8 +11,8 @@ export default function Header() {
       <div className="container mx-auto flex justify-between items-center">
         {/** logo */}
         <Link href="/">
-          <h1 className="text-4xl font-semibold">
-            Nicholas<span className="text-accent">.</span>
+          <h1 className="text-4xl font-cursive">
+            Nicholas L <span className="text-accent">.</span>
           </h1>
         </Link>
         {/* desktop nav & hire me button*/}

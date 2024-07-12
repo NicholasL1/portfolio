@@ -22,6 +22,7 @@ module.exports = {
     },
     fontFamily: {
       primary: "var(--font-jetbrainsMono)",
+      cursive: ["Bradley Hand", "cursive"],
     },
     extend: {
       colors: {
