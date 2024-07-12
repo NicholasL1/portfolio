@@ -1,3 +1,5 @@
+"use client";
+
 import { motion } from "framer-motion";
 import { useContext, useState, useEffect } from "react";
 import Lottie from "lottie-react";
@@ -23,10 +25,15 @@ const Coder = () => {
         initial={{ opacity: 0 }}
         animate={{
           opacity: 1,
-          transition: { delay: 2, duration: 0.4, ease: "easeIn" },
+          transition: { delay: 1.3, duration: 0.8, ease: "easeInOut" },
         }}
       >
-        <Lottie key={key} animationData={codingBoy} loop={true} />;
+        <Lottie
+          key={key}
+          animationData={codingBoy}
+          loop={true}
+          className="object-contain"
+        />
       </motion.div>
     </div>
   );

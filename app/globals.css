@@ -19,4 +19,10 @@
     @apply text-[20px] xl:text-[24px] leading-[1.1] font-semibold
   }
 }
+
+@layer utilities {
+  .paused {
+    animation-play-state: paused;
+  }
+}
   
