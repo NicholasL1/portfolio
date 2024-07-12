@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { useContext, useState, useEffect } from "react";
 import Lottie from "lottie-react";
 import { ThemeContext } from "@/app/context/Theme";
@@ -16,7 +17,19 @@ const Coder = () => {
     setKey((prevKey) => prevKey + 1); // Update key to force re-render
   }, [darkMode]);
 
-  return <Lottie key={key} animationData={codingBoy} loop={true} />;
+  return (
+    <div className="w-full h-full relative">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{
+          opacity: 1,
+          transition: { delay: 2, duration: 0.4, ease: "easeIn" },
+        }}
+      >
+        <Lottie key={key} animationData={codingBoy} loop={true} />;
+      </motion.div>
+    </div>
+  );
 };
 
 export default Coder;
