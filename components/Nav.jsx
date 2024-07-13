@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation"; // Correct import
-import ThemeToggle from "./ThemeToggle";
+import ThemeToggle from "./ui/ThemeToggle";
 
 const links = [
   {
@@ -10,8 +10,8 @@ const links = [
     path: "/",
   },
   {
-    name: "resume",
-    path: "/resume",
+    name: "experience",
+    path: "/experience",
   },
   {
     name: "work",

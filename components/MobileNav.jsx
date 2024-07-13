@@ -4,7 +4,7 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { CiMenuFries } from "react-icons/ci";
-import ThemeToggle from "./ThemeToggle";
+import ThemeToggle from "./ui/ThemeToggle";
 
 const links = [
   {
@@ -12,8 +12,8 @@ const links = [
     path: "/",
   },
   {
-    name: "resume",
-    path: "/resume",
+    name: "experience",
+    path: "/experience",
   },
   {
     name: "work",
