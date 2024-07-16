@@ -121,11 +121,6 @@ const skills = [
     src: "https://cdn.builder.io/api/v1/image/assets/TEMP/d62f4056842bb9f02bd898bc65cc5bb9222e29e7c05ef9c42be1164733bd44d4?",
     alt: "Spring Boot",
   },
-  {
-    link: "https://react.dev/blog/2023/03/16/introducing-react-dev",
-    src: "https://cdn.builder.io/api/v1/image/assets/TEMP/aa22f6d691d3e4e7137395fe27d3b2987008c9d20df6f4968d8bff9814be06f9?",
-    alt: "React.js",
-  },
 ];
 
 export const Skills = () => {

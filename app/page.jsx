@@ -5,6 +5,7 @@ import LandingPage from "@/components/LandingPage";
 import Interact from "@/components/ui/interact";
 import Coder from "@/components/ui/coder";
 import { Skills } from "@/components/ui/skills";
+import Experience from "@/app/experience/page";
 
 const Home = () => {
   return (
@@ -26,6 +27,10 @@ const Home = () => {
         <div>
           {/* Skills rotating carousel */}
           <Skills />
+        </div>
+        <div className="flex flex-col justify-center items-center pt-20 pb-20">
+          {/* Experience */}
+          <Experience />
         </div>
       </div>
     </section>
