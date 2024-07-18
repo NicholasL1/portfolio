@@ -61,10 +61,21 @@ const timelineElements = [
   },
 ];
 
+// Implemented Experience and education section,
+// need to still made them alternate sides, update colors, add picture svgs for each
+// and make them fade in and out like the landing page image
 const Experience = ({ defaultColor }) => {
   return (
     <div>
       {timelineElements.map((element) => {
+        const colors = [
+          "bg-red-500",
+          "bg-blue-500",
+          "bg-yellow-500",
+          "bg-purple-500",
+          "bg-orange-500",
+        ];
+
         const color = defaultColor || `bg-${element.color}-500`;
 
         return (

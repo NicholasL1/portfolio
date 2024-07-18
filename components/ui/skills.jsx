@@ -117,9 +117,29 @@ const skills = [
     alt: "MySQL",
   },
   {
-    link: "https://docs.spring.io/spring-boot/index.html",
+    link: "https://spring.io/projects/spring-framework",
     src: "https://cdn.builder.io/api/v1/image/assets/TEMP/d62f4056842bb9f02bd898bc65cc5bb9222e29e7c05ef9c42be1164733bd44d4?",
+    alt: "Spring",
+  },
+  {
+    link: "https://docs.spring.io/spring-boot/index.html",
+    src: "https://cdn.builder.io/api/v1/image/assets/TEMP/874dc8d4098535be23ea3a7b3d7604f60c9500aa850916ad81598b0ea8154dd6?",
     alt: "Spring Boot",
+  },
+  {
+    link: "https://tailwindcss.com/docs/installation",
+    src: "https://cdn.builder.io/api/v1/image/assets/TEMP/bc00d0db924b6aee10e7be1f9da7e03f025683fa4b7275668102e807628c110b?",
+    alt: "Tailwind",
+  },
+  {
+    link: "https://docs.aws.amazon.com/s3/",
+    src: "https://cdn.builder.io/api/v1/image/assets/TEMP/c2c7d4f825e184696b9cb8af187a88477f7d7971c4bdd12eb7825d6084515047?",
+    alt: "Amazon S3",
+  },
+  {
+    link: "https://docs.aws.amazon.com/ec2/",
+    src: "https://cdn.builder.io/api/v1/image/assets/TEMP/e47798dcee8f7e868b82cc870dc4c42b2d4549e6fffe27fa281766f06a5c3687?",
+    alt: "Amazon EC2",
   },
 ];
 
