@@ -155,46 +155,42 @@ export const Skills = () => {
         className="flex space-x-16 overflow-hidden group"
       >
         <div className="flex space-x-16 animate-loop-scroll group-hover:paused">
-          {skills.map((skill) => {
-            return (
-              <a href={skill.link} target="_blank" rel="noopener noreferrer">
-                <Tooltip>
-                  <TooltipTrigger asChild>
-                    <img
-                      src={skill.src}
-                      alt={skill.alt}
-                      className="max-w-none"
-                      loading="lazy"
-                    />
-                  </TooltipTrigger>
-                  <TooltipContent>
-                    <p>{skill.alt}</p>
-                  </TooltipContent>
-                </Tooltip>
-              </a>
-            );
-          })}
+          {skills.map((skill, index) => (
+            <Tooltip key={index} className="overflow-visible">
+              <TooltipTrigger asChild>
+                <a href={skill.link} target="_blank" rel="noopener noreferrer">
+                  <img
+                    src={skill.src}
+                    alt={skill.alt}
+                    className="max-w-none"
+                    loading="lazy"
+                  />
+                </a>
+              </TooltipTrigger>
+              <TooltipContent side="top" align="top">
+                <p>{skill.alt}</p>
+              </TooltipContent>
+            </Tooltip>
+          ))}
         </div>
         <div className="flex space-x-16 animate-loop-scroll group-hover:paused">
-          {skills.map((skill) => {
-            return (
-              <a href={skill.link} target="_blank" rel="noopener noreferrer">
-                <Tooltip>
-                  <TooltipTrigger asChild>
-                    <img
-                      src={skill.src}
-                      alt={skill.alt}
-                      className="max-w-none"
-                      loading="lazy"
-                    />
-                  </TooltipTrigger>
-                  <TooltipContent side="top">
-                    <p>{skill.alt}</p>
-                  </TooltipContent>
-                </Tooltip>
-              </a>
-            );
-          })}
+          {skills.map((skill, index) => (
+            <Tooltip key={index + skills.length}>
+              <TooltipTrigger asChild>
+                <a href={skill.link} target="_blank" rel="noopener noreferrer">
+                  <img
+                    src={skill.src}
+                    alt={skill.alt}
+                    className="max-w-none"
+                    loading="lazy"
+                  />
+                </a>
+              </TooltipTrigger>
+              <TooltipContent side="top" align="top">
+                <p>{skill.alt}</p>
+              </TooltipContent>
+            </Tooltip>
+          ))}
         </div>
       </motion.div>
     </TooltipProvider>
