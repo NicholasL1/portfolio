@@ -40,6 +40,7 @@ const Home = () => {
           {/* Skills rotating carousel */}
           <Skills />
         </div>
+        {/* TODO (Maybe): Add images to the sides of the timeline and fade in animation*/}
         <div className="flex flex-col items-center pt-20 pb-20">
           {/* Experience */}
           {/* <div className="w-1/6"></div> */}
