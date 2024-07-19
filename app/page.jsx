@@ -1,11 +1,23 @@
 "use client";
 
+import Image from "next/image";
+
 // Components
 import LandingPage from "@/components/LandingPage";
 import Interact from "@/components/ui/interact";
 import Coder from "@/components/ui/coder";
 import { Skills } from "@/components/ui/skills";
 import Experience from "@/app/experience/page";
+
+// York image
+{
+  /* <img
+src="https://cdn.builder.io/api/v1/image/assets/TEMP/525034fbb59c0a2f32001ee5572aefb8696ebb273ce5147f418df23d4ed3182d?"
+alt="York"
+className="max-w-none"
+loading="lazy"
+/> */
+}
 
 const Home = () => {
   return (
@@ -28,9 +40,11 @@ const Home = () => {
           {/* Skills rotating carousel */}
           <Skills />
         </div>
-        <div className="flex flex-col justify-center items-center pt-20 pb-20">
+        <div className="flex flex-col items-center pt-20 pb-20">
           {/* Experience */}
+          {/* <div className="w-1/6"></div> */}
           <Experience />
+          {/* <div className="w-1/6"></div> */}
         </div>
       </div>
     </section>

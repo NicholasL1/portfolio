@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { splitStringUsingRegex } from "@/lib/utils";
 
-const intro = "Hello I'm";
+const intro = "Hello, I'm";
 const name = "Nicholas Lachhman";
 const description =
   "Driven by passion for knowledge, I build seamless digital experiences while continually expanding my expertise in various programming languages and emerging technologies.";
