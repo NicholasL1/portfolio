@@ -21,7 +21,7 @@ const Interact = () => {
         size="lg"
         className="uppercase flex items-center gap-2 border border-accent"
       >
-        <span>Contact Me</span>
+        <span>Say hello!</span>
         <MdConnectWithoutContact className="text-xl" />
       </Button>
       <div className="mb-8 xl:mb-0">
