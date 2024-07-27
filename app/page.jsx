@@ -47,6 +47,7 @@ const Home = () => {
           <Experience />
           {/* <div className="w-1/6"></div> */}
         </div>
+        <div className="flex flex-col item-center pt-20 pb-20"></div>
       </div>
     </section>
   );
