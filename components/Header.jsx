@@ -8,7 +8,7 @@ import MobileNav from "./MobileNav";
 export default function Header() {
   return (
     <header className="py-8 xl:py-12 bg-primary">
-      <div className="container mx-auto flex justify-between items-center">
+      <div className="container mx-auto flex justify-between">
         {/** logo */}
         <Link href="/">
           <h1 className="text-4xl font-cursive">

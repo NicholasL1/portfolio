@@ -174,14 +174,15 @@ const Experience = ({ defaultColor }) => {
               ></div>
             </motion.div>
             <motion.div
-              className={` dark:bg-dark bg-light rounded-lg px-8 py-4 text-center z-10 flex-1 ${
+              className={`inter-var dark:bg-dark bg-light rounded-lg px-8 py-4 text-center z-10 flex-1 ${
                 isEven ? "lg:mr-56" : "lg:ml-56"
-              } rounded-md shadow-md shadow-gray-800 hover:scale-105 hover:duration-150 duration-150`}
+              } rounded-md shadow-md shadow-gray-800`}
               variants={expVariants}
               initial="initial"
               whileInView="animate"
               viewport={{ once: true }}
               custom={isEven}
+              whileHover={{ scale: 1.05, transition: { duration: 0.25 } }}
             >
               <div
                 className={`text-xl ${

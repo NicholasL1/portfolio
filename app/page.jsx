@@ -40,14 +40,19 @@ const Home = () => {
           {/* Skills rotating carousel */}
           <Skills />
         </div>
+        <div className="flex flex-col item-center pt-20 pb-20" id="about"></div>
         {/* TODO (Maybe): Add images to the sides of the timeline and fade in animation*/}
-        <div className="flex flex-col items-center pt-20 pb-20">
+        <div className="flex flex-col items-center pt-20 pb-20" id="experience">
           {/* Experience */}
           {/* <div className="w-1/6"></div> */}
           <Experience />
           {/* <div className="w-1/6"></div> */}
         </div>
-        <div className="flex flex-col item-center pt-20 pb-20"></div>
+        <div className="flex flex-col item-center pt-20 pb-20" id="work"></div>
+        <div
+          className="flex flex-col item-center pt-20 pb-20"
+          id="contact"
+        ></div>
       </div>
     </section>
   );
