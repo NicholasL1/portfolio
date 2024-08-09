@@ -30,7 +30,7 @@ module.exports = {
     },
     extend: {
       colors: {
-        dark: "#1c1c22",
+        dark: "#0d1321",
         light: "#DFE0E2",
         accent: {
           DEFAULT: "#399ce3",
