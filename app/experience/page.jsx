@@ -1,3 +1,5 @@
+"use client";
+
 import schoolIcon from "@/public/assets/school.svg";
 import workIcon from "@/public/assets/work.svg";
 import { motion } from "framer-motion";
@@ -120,7 +122,7 @@ const timelineVariants = {
 const Experience = ({ defaultColor }) => {
   return (
     <div className="w-full h-full">
-      <h1 className="font-bold text-4xl pb-8">myExperience</h1>
+      <h1 className="font-bold text-4xl pb-8">/ experience</h1>
       {timelineElements.map((element, index) => {
         const colors = [
           "bg-red-500",

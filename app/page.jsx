@@ -8,6 +8,7 @@ import Interact from "@/components/ui/interact";
 import Coder from "@/components/ui/coder";
 import { Skills } from "@/components/ui/skills";
 import Experience from "@/app/experience/page";
+import About from "@/app/about/page";
 
 // York image
 {
@@ -40,13 +41,11 @@ const Home = () => {
           {/* Skills rotating carousel */}
           <Skills />
         </div>
-        <div className="flex flex-col item-center pt-20 pb-20" id="about"></div>
-        {/* TODO (Maybe): Add images to the sides of the timeline and fade in animation*/}
+        <div className="flex flex-col item-center pt-20 pb-10" id="about">
+          <About />
+        </div>
         <div className="flex flex-col items-center pt-20 pb-20" id="experience">
-          {/* Experience */}
-          {/* <div className="w-1/6"></div> */}
           <Experience />
-          {/* <div className="w-1/6"></div> */}
         </div>
         <div className="flex flex-col item-center pt-20 pb-20" id="work"></div>
         <div
