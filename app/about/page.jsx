@@ -34,7 +34,7 @@ const techVariants = {
     opacity: 1,
     x: 0,
     transition: {
-      delay: 0.8 + 0.3 * index,
+      delay: 0.8 + 0.25 * index,
       duration: 0.45,
     },
   }),
