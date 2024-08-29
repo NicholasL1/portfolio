@@ -34,7 +34,7 @@ const techVariants = {
     opacity: 1,
     x: 0,
     transition: {
-      delay: 0.8 + 0.25 * index,
+      delay: 0.8 + 0.15 * index,
       duration: 0.45,
     },
   }),
@@ -46,12 +46,13 @@ const page = () => {
       <h1 className="font-bold text-4xl pb-8">/ about</h1>
       <section>
         <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-          <Robot />
+          <Robot className="mx-auto" />
           <motion.div
             variants={textVariants}
             initial="initial"
             whileInView="animate"
             viewport={{ once: true }}
+            className="mx-auto"
           >
             <h1 className="font-bold text-3xl mb-4">About Me</h1>
             <p className="text-base md:text-md mb-4">

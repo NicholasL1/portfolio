@@ -1,14 +1,13 @@
 "use client";
 
-import Image from "next/image";
-
 // Components
 import LandingPage from "@/components/LandingPage";
 import Interact from "@/components/ui/interact";
 import Coder from "@/components/ui/coder";
 import { Skills } from "@/components/ui/skills";
-import Experience from "@/app/experience/page";
 import About from "@/app/about/page";
+import Experience from "@/app/experience/page";
+import Work from "@/app/work/page";
 
 // York image
 {
@@ -41,13 +40,23 @@ const Home = () => {
           {/* Skills rotating carousel */}
           <Skills />
         </div>
+        {/* About section */}
         <div className="flex flex-col item-center pt-20 pb-10" id="about">
           <About />
         </div>
+        {/* Experience section */}
         <div className="flex flex-col items-center pt-20 pb-20" id="experience">
           <Experience />
         </div>
-        <div className="flex flex-col item-center pt-20 pb-20" id="work"></div>
+        {/* Work section */}
+        <div className="flex flex-col items-center pt-20 pb-20" id="work">
+          <Work />
+        </div>
+        {/* Contact section */}
+        <div
+          className="flex flex-col item-center pt-20 pb-20"
+          id="contact"
+        ></div>
         <div
           className="flex flex-col item-center pt-20 pb-20"
           id="contact"
