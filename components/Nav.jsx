@@ -1,8 +1,8 @@
 "use client";
 
 import Link from "next/link";
+import dynamic from "next/dynamic";
 import { usePathname } from "next/navigation"; // Correct import
-import ThemeToggle from "./ui/ThemeToggle";
 
 const links = [
   {
@@ -26,6 +26,10 @@ const links = [
     path: "#contact",
   },
 ];
+
+const ThemeToggle = dynamic(() => import("./ui/ThemeToggle"), {
+  ssr: false,
+});
 
 export default function Nav() {
   const pathname = usePathname(); // Correct function name

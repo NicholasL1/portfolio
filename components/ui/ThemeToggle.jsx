@@ -1,5 +1,3 @@
-"use client";
-
 import { useEffect, useContext } from "react";
 import { FaMoon } from "react-icons/fa";
 import { BsSunFill } from "react-icons/bs";

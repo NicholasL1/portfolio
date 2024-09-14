@@ -1,10 +1,10 @@
 "use client";
 
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import dynamic from "next/dynamic";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { CiMenuFries } from "react-icons/ci";
-import ThemeToggle from "./ui/ThemeToggle";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
 const links = [
   {
@@ -28,6 +28,10 @@ const links = [
     path: "#contact",
   },
 ];
+
+const ThemeToggle = dynamic(() => import("./ui/ThemeToggle"), {
+  ssr: false,
+});
 
 const MobileNav = () => {
   const pathname = usePathname();

@@ -43,7 +43,7 @@ const techVariants = {
 const page = () => {
   return (
     <div className="w-full h-full">
-      <h1 className="font-bold text-4xl pb-8">/ about</h1>
+      <h1 className="font-bold text-4xl pb-8">/about</h1>
       <section>
         <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
           <Robot className="mx-auto" />
@@ -56,13 +56,13 @@ const page = () => {
           >
             <h1 className="font-bold text-3xl mb-4">About Me</h1>
             <p className="text-base md:text-md mb-4">
-              I am a jack of all trades software engineer with a passion for
-              creating innovative solutions to complex problems. With experience
-              spanning various technologies and industries, I thrive on the
-              challenge of learning new skills and applying them in unique ways.
-              Whether it's developing sleek user interfaces, optimizing backend
-              systems, or exploring emerging tech, I’m dedicated to delivering
-              high-quality, efficient, and impactful results.{" "}
+              I am a jack of all trades engineer with a passion for creating
+              innovative solutions to complex problems. With experience spanning
+              various technologies and industries, I thrive on the challenge of
+              learning new skills and applying them in unique ways. Whether it's
+              developing sleek user interfaces, optimizing backend systems, or
+              exploring emerging tech, I’m dedicated to delivering high-quality,
+              efficient, and impactful results.{" "}
             </p>
             <p className="text-base md:text-md pb-2">
               Some technologies I've used recently:
