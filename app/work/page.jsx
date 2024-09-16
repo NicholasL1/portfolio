@@ -19,13 +19,13 @@ const Work = () => {
       opacity: 0,
       y: 50,
     },
-    animate: (index) => ({
+    animate: {
       opacity: 1,
       y: 0,
       transition: {
-        delay: 0.2 * index,
+        delay: 0.5,
       },
-    }),
+    },
   };
 
   // Effect to handle responsive design
@@ -203,7 +203,13 @@ const Work = () => {
           className="absolute left-0 cursor-pointer text-4xl text-gray-500 hover:text-gray-700"
         />
         {/* Projects Container */}
-        <div className="flex flex-col md:flex-row gap-8 p-4 items-center justify-center">
+        <motion.div
+          className="flex flex-col md:flex-row gap-8 p-4 items-center justify-center"
+          variants={projectVariants}
+          initial="initial"
+          whileInView="animate"
+          viewport={{ once: true }}
+        >
           {projects
             .slice(currentIndex, currentIndex + projectsPerPage)
             .map(({ id, title, des, img, skills, github, link }, index) => {
@@ -211,15 +217,10 @@ const Work = () => {
               const filteredSkills = filterSkills(skills);
 
               return (
-                <motion.div
+                <div
                   key={id}
-                  className="flex flex-col h-[15rem] sm:w-80 w-[50vw] rounded-2xl transition-all duration-300 hover:scale-110 hover:dark:bg-[#142038] hover:bg-[#b9bdc7] hover:shadow-lg cursor-pointer dark:bg-[#0f182b] bg-[#d3d6de]"
+                  className="flex flex-col h-[15rem] sm:w-80 w-[50vw] rounded-2xl transition-all duration-300 hover:scale-105 hover:dark:bg-[#142038] hover:bg-[#b9bdc7] hover:shadow-lg cursor-pointer dark:bg-[#0f182b] bg-[#d3d6de]"
                   onClick={setCarouselIndex.bind(null, id - 1)}
-                  variants={projectVariants}
-                  initial="initial"
-                  whileInView="animate"
-                  viewport={{ once: true }}
-                  custom={id}
                 >
                   {/* Title and icon */}
                   <div className="flex flex-row justify-between p-6">
@@ -268,10 +269,10 @@ const Work = () => {
                       )}
                     </div>
                   </div>
-                </motion.div>
+                </div>
               );
             })}
-        </div>
+        </motion.div>
         {/* Right arrow for navigation */}
         <BsChevronCompactRight
           onClick={handleNext}
