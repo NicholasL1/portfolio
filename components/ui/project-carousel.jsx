@@ -1,5 +1,4 @@
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
-import skills from "@/public/skills";
 import { filterSkills } from "@/lib/utils";
 
 export default function ProjectCarousel({
@@ -11,24 +10,26 @@ export default function ProjectCarousel({
   link,
 }) {
   const filteredSkills = filterSkills(skillsList);
+
   return (
     <div
-      className="w-full h-full flex flex-col items-center bg-cover bg-center relative"
+      className="w-full min-h-[70vh] flex flex-col justify-between bg-cover bg-center relative"
       style={{
         backgroundImage: `url(${image})`,
       }}
     >
       {/* Semi-Transparent Overlay */}
-      <div className="absolute inset-0 bg-gray-900 opacity-50 hover:scale-105"></div>
+      <div className="absolute inset-0 bg-gray-900 opacity-50"></div>
 
       {/* Content */}
-      <div className="w-full flex flex-col text-white z-0 text-center justify-end pb-8 h-full">
-        <h2 className="text-2xl font-bold">{title}</h2>
-        <p className="text-sm px-64 py-4">{description}</p>
+      <div className="relative z-10 flex-grow flex flex-col justify-center items-center p-8 text-center">
+        <h2 className="text-3xl font-bold text-white">{title}</h2>
+        <p className="text-white text-sm sm:px-12 lg:px-24 py-4">
+          {description}
+        </p>
+
         {/* Skill Icons */}
-        <div className="flex flex-wrap justify-center gap-12">
-          {" "}
-          {/* Adjusted gap */}
+        <div className="flex flex-wrap justify-center gap-6 py-4">
           {filteredSkills.length > 0 ? (
             filteredSkills.map((skill, index) => (
               <a
@@ -46,19 +47,17 @@ export default function ProjectCarousel({
               </a>
             ))
           ) : (
-            <p>---------------------</p>
+            <p className="text-white">No skills available</p>
           )}
         </div>
-        {/* Icons for GitHub and Live Link */}
-        <div className="flex justify-center space-x-6 pt-4 gap-4">
-          {/* GitHub Icon */}
-          <a href={github} target="_blank" rel="noopener noreferrer">
-            <FaGithub className="text-2xl hover:text-gray-400 transition-colors" />
-          </a>
 
-          {/* Live Link Icon */}
+        {/* Icons for GitHub and Live Link */}
+        <div className="flex justify-center space-x-6 pt-4">
+          <a href={github} target="_blank" rel="noopener noreferrer">
+            <FaGithub className="text-2xl text-white hover:text-gray-400 transition-colors" />
+          </a>
           <a href={link} target="_blank" rel="noopener noreferrer">
-            <FaExternalLinkAlt className="text-2xl hover:text-gray-400 transition-colors" />
+            <FaExternalLinkAlt className="text-2xl text-white hover:text-gray-400 transition-colors" />
           </a>
         </div>
       </div>
