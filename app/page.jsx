@@ -8,6 +8,7 @@ import { Skills } from "@/components/ui/skills";
 import About from "@/app/about/page";
 import Experience from "@/app/experience/page";
 import Work from "@/app/work/page";
+import Contact from "./contact/page";
 
 // York image
 {
@@ -53,10 +54,9 @@ const Home = () => {
           <Work />
         </div>
         {/* Contact section */}
-        <div
-          className="flex flex-col item-center pt-20 pb-20"
-          id="contact"
-        ></div>
+        <div className="flex flex-col item-center pt-20 pb-20" id="contact">
+          <Contact />
+        </div>
         <div
           className="flex flex-col item-center pt-20 pb-20"
           id="contact"

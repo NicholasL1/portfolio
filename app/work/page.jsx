@@ -28,10 +28,24 @@ const Work = () => {
     },
   };
 
+  const carouselVariants = {
+    initial: {
+      opacity: 0,
+    },
+    animate: {
+      opacity: 1,
+      transition: {
+        delay: 0.35,
+        duration: 0.4,
+        ease: "easeIn",
+      },
+    },
+  };
+
   // Effect to handle responsive design
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth >= 1024) {
+      if (window.innerWidth >= 1280) {
         setProjectsPerPage(3);
       } else if (window.innerWidth >= 768) {
         setProjectsPerPage(2);
@@ -150,7 +164,13 @@ const Work = () => {
       </h2>
 
       {/* Project Carousel */}
-      <div className="relative w-full min-h-[70vh] overflow-hidden">
+      <motion.div
+        className="relative w-full min-h-[70vh] overflow-hidden"
+        variants={carouselVariants}
+        initial="initial"
+        whileInView="animate"
+        viewport={{ once: true }}
+      >
         <div
           className="flex min-h-[70vh] transition-transform duration-500"
           style={{
@@ -190,7 +210,7 @@ const Work = () => {
         >
           <BsChevronCompactRight size={30} />
         </div>
-      </div>
+      </motion.div>
 
       {/* Dot selector */}
       <div className="flex justify-center mt-6 space-x-2">{renderDots()}</div>

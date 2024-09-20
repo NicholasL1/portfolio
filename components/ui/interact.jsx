@@ -20,6 +20,7 @@ const Interact = () => {
         variant="outline"
         size="lg"
         className="uppercase flex items-center gap-2 border border-accent"
+        href="#contact"
       >
         <span>Say hello!</span>
         <MdConnectWithoutContact className="text-xl" />
