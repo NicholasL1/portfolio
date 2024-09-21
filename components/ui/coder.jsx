@@ -1,23 +1,30 @@
-"use client";
-
 import { motion } from "framer-motion";
 import { useContext, useState, useEffect } from "react";
-import Lottie from "lottie-react";
 import { ThemeContext } from "@/app/context/Theme";
 import codingBoyDark from "@/public/assets/coding-boy-dark.json";
 import codingBoyLight from "@/public/assets/coding-boy-light.json";
+import dynamic from "next/dynamic";
+
+const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 
 const Coder = () => {
   const { darkMode } = useContext(ThemeContext);
-  const [key, setKey] = useState(0); // State to force re-render
-  const [codingBoy, setCodingBoy] = useState(
-    darkMode ? codingBoyDark : codingBoyLight
-  );
+  const [isClient, setIsClient] = useState(false);
+  const [codingBoy, setCodingBoy] = useState(codingBoyLight);
 
   useEffect(() => {
-    setCodingBoy(darkMode ? codingBoyDark : codingBoyLight);
-    setKey((prevKey) => prevKey + 1); // Update key to force re-render
-  }, [darkMode]);
+    setIsClient(true);
+  }, []);
+
+  useEffect(() => {
+    if (isClient) {
+      setCodingBoy(darkMode ? codingBoyDark : codingBoyLight);
+    }
+  }, [darkMode, isClient]);
+
+  if (!isClient) {
+    return null; // Prevent rendering on the server
+  }
 
   return (
     <div className="w-full h-full relative">
@@ -29,7 +36,6 @@ const Coder = () => {
         }}
       >
         <Lottie
-          key={key}
           animationData={codingBoy}
           loop={true}
           className="object-contain"

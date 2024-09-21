@@ -48,9 +48,6 @@ const timelineVariants = {
   },
 };
 
-// Implemented Experience and education section,
-// need to still made them alternate sides, update colors, add picture svgs for each
-// and make them fade in and out like the landing page image
 const Experience = ({ defaultColor }) => {
   return (
     <div className="w-full h-full">
@@ -69,7 +66,7 @@ const Experience = ({ defaultColor }) => {
 
         return (
           <div
-            key={element.id}
+            key={element.id} // Ensure each top-level div has a unique key
             className={`flex justify-between ${
               isEven ? "flex-row-reverse" : "flex-row"
             } m-4 w-full relative`}
@@ -83,14 +80,13 @@ const Experience = ({ defaultColor }) => {
               whileInView="animate"
               viewport={{ once: true }}
             >
-              {/* // if needed, add text-gray-500 to classname here */}
               <div
                 className={`w-4/5 ${
                   isEven ? "ml-3" : ""
                 } text-gray-500 text-sm`}
               >
                 {element.date}
-              </div>{" "}
+              </div>
               <div
                 className={`${color} w-px h-full ${
                   isEven ? "-translate-x-5" : "translate-x-5"
@@ -140,18 +136,26 @@ const Experience = ({ defaultColor }) => {
                   isEven ? "text-left" : "text-right"
                 } text-xs`}
               >
-                {element.description.split("^").map((line, index) => (
-                  <>
-                    <li key={index}>{line}</li>
-                    <br />
-                  </>
-                ))}
+                {element.description.split("^").map(
+                  (
+                    line,
+                    lineIndex // Use unique key here
+                  ) => (
+                    <div key={lineIndex}>
+                      {" "}
+                      {/* Change this to a div and add key */}
+                      <li>{line}</li>
+                      <br />
+                    </div>
+                  )
+                )}
               </div>
               <div className="flex flex-wrap mb-6 justify-center">
-                {element.tech.map((tech, index) => {
+                {element.tech.map((tech, techIndex) => {
+                  // Use unique key for tech items
                   return (
                     <motion.span
-                      key={index}
+                      key={techIndex} // Change to a unique key if possible
                       className="dark:bg-[#0272C3] bg-blue-400 rounded-xl px-2 py-1 text-sm m-1"
                       variants={skillVariants}
                       initial="initial"
@@ -159,7 +163,7 @@ const Experience = ({ defaultColor }) => {
                       viewport={{
                         once: true,
                       }}
-                      custom={index}
+                      custom={techIndex}
                     >
                       {tech}
                     </motion.span>
