@@ -9,6 +9,7 @@ import About from "@/app/about/page";
 import Experience from "@/app/experience/page";
 import Work from "@/app/work/page";
 import Contact from "./contact/page";
+import { Button } from "@/components/ui/button";
 
 // York image
 {
@@ -57,10 +58,17 @@ const Home = () => {
         <div className="flex flex-col item-center pt-20 pb-20" id="contact">
           <Contact />
         </div>
-        <div
-          className="flex flex-col item-center pt-20 pb-20"
-          id="contact"
-        ></div>
+        <div className="flex flex-col items-center pt-10 pb-10">
+          <a href="#">
+            <Button
+              variant="outline"
+              size="lg"
+              className="uppercase flex items-center gap-2 border border-accent"
+            >
+              <span>Back to top</span>
+            </Button>
+          </a>
+        </div>
       </div>
     </section>
   );

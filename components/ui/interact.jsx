@@ -1,9 +1,6 @@
-// components
 import { motion } from "framer-motion";
-
 import { Button } from "@/components/ui/button";
 import Social from "@/components/ui/social";
-
 import { MdConnectWithoutContact } from "react-icons/md";
 
 const Interact = () => {
@@ -16,15 +13,16 @@ const Interact = () => {
       }}
       className="flex flex-col xl:flex-row items-center gap-8"
     >
-      <Button
-        variant="outline"
-        size="lg"
-        className="uppercase flex items-center gap-2 border border-accent"
-        href="#contact"
-      >
-        <span>Say hello!</span>
-        <MdConnectWithoutContact className="text-xl" />
-      </Button>
+      <a href="#contact">
+        <Button
+          variant="outline"
+          size="lg"
+          className="uppercase flex items-center gap-2 border border-accent"
+        >
+          <span>Say hello!</span>
+          <MdConnectWithoutContact className="text-xl" />
+        </Button>
+      </a>
       <div className="mb-8 xl:mb-0">
         <Social
           containerStyles="flex gap-6"
