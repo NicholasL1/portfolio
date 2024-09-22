@@ -2,9 +2,9 @@
 
 import { motion } from "framer-motion";
 import dynamic from "next/dynamic"; // Import dynamic from Next.js
+import robot from "@/public/assets/robot.json";
 
 const Lottie = dynamic(() => import("lottie-react"), { ssr: false }); // Use dynamic import
-import robot from "@/public/assets/robot.json";
 
 const hiVariants = {
   initial: {
