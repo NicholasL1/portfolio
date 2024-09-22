@@ -11,16 +11,6 @@ import Work from "@/app/work/page";
 import Contact from "./contact/page";
 import { Button } from "@/components/ui/button";
 
-// York image
-{
-  /* <img
-src="https://cdn.builder.io/api/v1/image/assets/TEMP/525034fbb59c0a2f32001ee5572aefb8696ebb273ce5147f418df23d4ed3182d?"
-alt="York"
-className="max-w-none"
-loading="lazy"
-/> */
-}
-
 const Home = () => {
   return (
     <section className="h-full">

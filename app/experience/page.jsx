@@ -104,7 +104,7 @@ const Experience = ({ defaultColor }) => {
               ></div>
             </motion.div>
             <motion.div
-              className={`inter-var dark:bg-[#0e1221] bg-[#d3d6de] rounded-lg px-8 py-4 text-center z-10 flex-1 ${
+              className={`inter-var dark:bg-[#0f182b] bg-[#d3d6de] rounded-lg px-8 py-4 text-center z-10 flex-1 ${
                 isEven ? "lg:mr-56" : "lg:ml-56"
               } rounded-md shadow-md shadow-gray-800`}
               variants={expVariants}
