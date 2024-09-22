@@ -53,7 +53,7 @@ const Contact = () => {
         whileInView="animate"
         viewport={{ once: true }}
       >
-        <div className="px-16 lg:px-20 pt-10 space-y-6">
+        <div className="px-10 lg:px-20 pt-16 space-y-6">
           <h1 className="text-5xl text-blue-500 italic">Let's Get In Touch.</h1>
           <p className="italic text-gray-600">
             Wanna work with me? Please feel free to shoot me a message.

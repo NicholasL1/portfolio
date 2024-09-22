@@ -160,7 +160,7 @@ const Work = () => {
 
   return (
     <div className="w-full h-full relative">
-      <h1 className="font-bold text-4xl sm:pb-8 md:pb-4">/work</h1>
+      <h1 className="font-bold text-4xl pb-8">/work</h1>
       <h2 className="hidden md:block font-semibold text-gray-600 text-xl my-4 italic">
         Select a project to display:
       </h2>

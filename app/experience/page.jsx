@@ -50,7 +50,7 @@ const timelineVariants = {
 
 const Experience = ({ defaultColor }) => {
   return (
-    <div className="w-full h-full">
+    <div className="w-full h-full pr-6">
       <h1 className="font-bold text-4xl pb-8">/experience</h1>
       {timelineElements.map((element, index) => {
         const colors = [
@@ -116,7 +116,7 @@ const Experience = ({ defaultColor }) => {
             >
               <div
                 className={`text-xl ${
-                  isEven ? "text-left" : "text-right"
+                  isEven ? "text-left" : "text-right rtl:ml-0"
                 } font-extrabold`}
               >
                 {element.title}
@@ -173,9 +173,9 @@ const Experience = ({ defaultColor }) => {
               <Image
                 src={element.icon === "school" ? schoolIcon : workIcon}
                 alt="icon"
-                className={`${color} w-8 p-1 rounded-lg z-20 absolute ${
+                className={`${color} w-8 p-1 rounded-lg z-20 sm:hidden absolute ${
                   isEven ? "right-4" : "left-4"
-                } top-4 sm:hidden`}
+                } top-4`} // Add mt-2 for small screens, remove on larger screens
               />
             </motion.div>
           </div>
