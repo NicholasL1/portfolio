@@ -1,7 +1,9 @@
 import React from "react";
-import Robot from "@/components/ui/robot";
 import { ChevronRight } from "lucide-react";
-import { animate, motion } from "framer-motion";
+import { motion } from "framer-motion";
+import dynamic from "next/dynamic";
+
+const Robot = dynamic(() => import("@components/ui/robot"), { ssr: false });
 
 const recentTech = [
   "TypeScript",
