@@ -10,7 +10,7 @@ const formVariants = {
   animate: {
     opacity: 1,
     transition: {
-      delay: 0.75,
+      delay: 0.4,
       duration: 0.4,
       ease: "easeIn",
     },
