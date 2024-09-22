@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import Social from "@/components/ui/social";
+import Social from "@/components/ui/Social";
 import { MdConnectWithoutContact } from "react-icons/md";
 
 const Interact = () => {
