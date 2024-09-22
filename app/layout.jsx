@@ -6,6 +6,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import PageTransition from "@/components/PageTransition";
 import { Theme } from "./context/Theme";
+import icon from "@/public/assets/icon.svg";
 // import StairTransition from "@/components/StairTransition";
 
 const jetbrainsMono = JetBrains_Mono({
