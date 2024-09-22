@@ -3,7 +3,7 @@ import { ChevronRight } from "lucide-react";
 import { motion } from "framer-motion";
 import dynamic from "next/dynamic";
 
-const Robot = dynamic(() => import("@components/ui/robot"), { ssr: false });
+const Robot = dynamic(() => import("@/components/ui/robot"), { ssr: false });
 
 const recentTech = [
   "TypeScript",
