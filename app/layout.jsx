@@ -6,7 +6,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import PageTransition from "@/components/PageTransition";
 import { Theme } from "./context/Theme";
-import icon from "@/public/assets/icon.svg";
+import { Analytics } from "@vercel/analytics/react";
 // import StairTransition from "@/components/StairTransition";
 
 const jetbrainsMono = JetBrains_Mono({
@@ -27,7 +27,10 @@ export default function RootLayout({ children }) {
         <body className={jetbrainsMono.variable}>
           <Header />
           {/* <StairTransition /> */}
-          <PageTransition>{children}</PageTransition>
+          <PageTransition>
+            {children}
+            <Analytics />
+          </PageTransition>
           <Footer />
         </body>
       </html>
