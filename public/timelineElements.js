@@ -41,7 +41,7 @@ const timelineElements = [
   {
     id: 4,
     title: "Software Engineer Intern",
-    location: "Radical AI",
+    location: "Reality AI",
     description:
       "Optimized user search queries by redesigning Firebase DB schema and Node.js functions, including indexing and caching to enhance performance^ Designed reusable and responsive Next.js components on large-scale AI platform, utilizing Redux to minimize redundant data fetching^ Defined Role-Based Access Control and Firestore security rules, and conducted vigorous testing with Apache JMeter so ensure smooth user experience",
     buttonText: "Radical AI",
@@ -56,13 +56,33 @@ const timelineElements = [
     title: "Data Engineer Intern",
     location: "Canada Life",
     description:
-      "Assisting in developing, optimizing, and maintaining data pipelines to support business intelligence and analytics initiatives",
-    buttonText: "LBA",
-    link: "https://lassondeblockchain.vercel.app/",
-    date: "09/24 - Pres.",
+      "Streamlined customer eligibility selection processes for large-scale campaigns using PySpark, distributing comprehensive outreach lists^ Leveraged SQL and Python with Pandas tooling on Databricks to perform ETL operations, improving data transformation workflows^ Designed scalable schema to integrate and organize customer data for enhanced accessibility and efficient data retrieval",
+    buttonText: "Canada Life Assurance",
+    link: "https://www.canadalife.com/",
+    date: "09/24 - 12/24.",
     icon: "work",
     color: "orange",
     tech: ["Python", "Azure", "SQL", "Databricks"],
+  },
+  {
+    id: 6,
+    title: "Full-Stack Engineer Intern",
+    location: "OMERS",
+    description:
+      "Joining a collaborative full-stack development team as an intern, contributing to the design, implementation, and testing of web applications while learning industry best practices and development workflows.",
+    buttonText: "OMERS",
+    link: "https://www.omers.com/",
+    date: "01/25 - Present",
+    icon: "work",
+    color: "green",
+    tech: [
+      "Next.js",
+      "Node.js",
+      "Express.js",
+      "Javascript",
+      "MSSQL",
+      "MongoDB",
+    ],
   },
 ];
 
